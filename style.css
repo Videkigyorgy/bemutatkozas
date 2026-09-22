@@ -1,0 +1,270 @@
+:root {
+  /* Világos mód színei */
+  --bg-color: aliceblue;
+  --text-color: #222222;
+  --header-bg: aqua;
+  --header-text: #ffffff;
+  --motto-color: purple;
+  --menu-bg: cadetblue;
+  --menu-hover: cyan;
+  --card-bg: lightblue;
+  --border-color: #e2ddd3;
+  --accent-color: greenyellow;
+  --heading-color: blue;
+  --muted-text: grey;
+  --link-color: magenta;
+  --link-hover: red;
+  --footer-bg: #1e3a8a;
+  --footer-bg: #dbeae8;
+  --footer-border: #b8d5d1;
+  --footer-text: #2c3e50;
+  --footer-link: #1d4ed8;
+  --footer-subtext: #52606d;
+  --btn-bg: #e0e0e0;
+  --btn-text: #222222;
+}
+
+body.dark-mode {
+  /* Sötét mód színei */
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --header-bg: #008b8b;
+  --header-text: #ffffff;
+  --motto-color: #d8bfd8;
+  --menu-bg: #1f4e5b;
+  --menu-hover: #00aaaa;
+  --card-bg: #1e293b;
+  --border-color: #334155;
+  --accent-color: #84cc16;
+  --heading-color: #38bdf8;
+  --muted-text: #94a3b8;
+  --link-color: #f472b6;
+  --link-hover: #fb7185;
+  --footer-bg: #1e293b;
+  --footer-border: #334155;
+  --footer-text: #f1f5f9;
+  --footer-link: #38bdf8;
+  --footer-subtext: #94a3b8;
+  --btn-bg: #333333;
+  --btn-text: #ffffff;
+}
+
+/* ==========================================
+   2. ALAPBEÁLLÍTÁSOK (RESET & BODY)
+   ========================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ==========================================
+   3. FEJLÉC ÉS MENÜ
+   ========================================== */
+.fejlec {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  padding: 40px 20px 32px;
+  text-align: center;
+}
+
+.profilkep {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+
+.fejlec h1 {
+  margin: 0 10px 6px;
+  font-size: 30px;
+}
+
+.motto {
+  margin: 0;
+  color: var(--motto-color);
+  font-style: italic;
+}
+
+.menu {
+  background-color: var(--menu-bg);
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.menu a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 14px;
+  margin: 2px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.menu a:hover {
+  background-color: var(--menu-hover);
+}
+
+/* ==========================================
+   4. TARTALOM ÉS DOBOZOK
+   ========================================== */
+.tartalom {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.doboz {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-left: 6px solid var(--accent-color);
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin-bottom: 26px;
+}
+
+/* ==========================================
+   5. KÁRTYÁK
+   ========================================== */
+.kozepre {
+  text-align: center;
+}
+
+.kartyak {
+  text-align: center;
+  margin-bottom: 26px;
+   display: inline-block;
+}
+
+.kartya {
+  display: inline-block;
+  width: 230px;
+  height: 480px;
+  vertical-align: top;
+  text-align: left;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 14px;
+  margin: 8px 6px;
+}
+
+.kartya img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.kartya p {
+  font-size: 15px;
+  color: var(--muted-text);
+}
+
+/* ==========================================
+   6. TIPIZÁLÁS (FEJLÉCEK, LISTÁK, LINKI)
+   ========================================== */
+h2 {
+  margin: 0 0 12px;
+  color: var(--heading-color);
+  font-size: 25px;
+}
+
+h3 {
+  margin: 12px 0 6px;
+  color: var(--heading-color);
+  font-size: 19px;
+}
+
+strong {
+  color: var(--heading-color);
+}
+
+.halvany {
+  color: var(--muted-text);
+  font-size: 15px;
+}
+
+.lista {
+  margin: 10px 0;
+  padding-left: 24px;
+}
+
+.lista li {
+  margin-bottom: 7px;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+
+
+/* ==========================================
+   7. IDŐVONAL DOBOZ
+   ========================================== */
+   .idezet{
+border-left: 4px var(--accent-color);
+padding: 12px 18px;
+margin: 16px 0 0;
+font-family: italic;
+}
+
+/* ==========================================
+   8. LÁBLÉC
+   ========================================== */
+
+
+.lablec {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  border-top: 2px solid var(--footer-border);
+  text-align: center;
+  padding: 28px 20px;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.lablec a {
+  color: var(--footer-link);
+  text-decoration: underline;
+}
+
+.lablec a:hover {
+  opacity: 0.8;
+}
+
+.apro {
+  font-size: 13px;
+  color: var(--footer-subtext);
+  margin-top: 8px;
+}
+
+
+/* ==========================================
+   **. GOMB
+   ========================================== */
+.toggle-btn {
+  padding: 10px 18px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
